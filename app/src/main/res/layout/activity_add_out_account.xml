@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/content_back"
+    android:orientation="vertical"
+    tools:context="com.android.silence.liccaitong.activity.AddOutAccount">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#596359"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#596359"
+            android:contentDescription="@string/img_back_desp"
+            android:gravity="center"
+            android:onClick="back"
+            android:src="@drawable/title_back_style"
+            />
+
+        <TextView
+            android:id="@+id/text_new_out_acco"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/new_out"
+            android:textColor="#ffffcc00"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_money"
+            android:textColor="#f7de77"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_money_out_ac"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/new_money_hint"
+            android:inputType="numberDecimal"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_date"
+            android:textColor="#f7de77"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_date_out_ac"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            android:hint="@string/new_date_hint"
+            android:inputType="date"/>
+
+        <Button
+            android:id="@+id/clickSelect"
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:background="@drawable/btn_green_style"
+            android:onClick="clickSelect"
+            android:text="@string/click_select"
+            android:textSize="12sp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_subject"
+            android:textColor="#f7de77"
+            android:textSize="20sp"
+            />
+
+        <Spinner
+            android:id="@+id/spinner_out_ac"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:prompt="@string/spinner_prompt"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_place"
+            android:textColor="#f7de77"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_place_out_ac"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/new_place_hint"
+            android:inputType="text"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/new_note"
+            android:textColor="#f7de77"
+            android:textSize="20sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_note_out_ac"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="@string/new_note_hint"
+            android:inputType="text"
+            android:lines="5"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_save_out_ac"
+        android:layout_width="100dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_orange_style"
+        android:onClick="outAccountSaveClick"
+        android:text="@string/btn_save"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        />
+</LinearLayout>

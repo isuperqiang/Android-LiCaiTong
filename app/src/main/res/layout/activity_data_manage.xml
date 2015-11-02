@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/content_back"
+    android:orientation="vertical"
+    tools:context="com.android.silence.liccaitong.activity.DataManage">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#596359"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="38dp"
+            android:layout_height="38dp"
+            android:layout_gravity="center"
+            android:background="#596359"
+            android:contentDescription="@string/img_back_desp"
+            android:gravity="center"
+            android:onClick="back"
+            android:src="@drawable/title_back_style"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginEnd="38dp"
+            android:layout_marginRight="38dp"
+            android:gravity="center"
+            android:text="@string/data_manage"
+            android:textColor="#ffffcc00"
+            android:textSize="25sp"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/text_data_del_in_acco"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/btn_red_style"
+        android:gravity="center"
+        android:onClick="resetTable"
+        android:text="@string/reset_in_account"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/text_data_del_out_acco"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_red_style"
+        android:gravity="center"
+        android:onClick="resetTable"
+        android:text="@string/reset_out_account"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/text_data_del_in_sub"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_red_style"
+        android:gravity="center"
+        android:onClick="resetTable"
+        android:text="@string/reset_in_subject"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/text_data_del_out_sub"
+        android:layout_width="200dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/btn_red_style"
+        android:gravity="center"
+        android:onClick="resetTable"
+        android:text="@string/reset_out_subject"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        />
+</LinearLayout>

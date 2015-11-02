@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/content_back"
+    android:orientation="vertical"
+    tools:context="com.android.silence.liccaitong.activity.SubjectManage">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#596359"
+        android:gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="#596359"
+            android:clickable="true"
+            android:contentDescription="@string/img_back_desp"
+            android:onClick="back"
+            android:src="@drawable/title_back_style"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="@string/subject_manage"
+            android:textColor="#ffffcc00"
+            android:textSize="25sp"
+            />
+
+        <ImageView
+            android:id="@+id/add_img"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginRight="5dp"
+            android:contentDescription="@string/btn_add_subject"
+            android:src="@mipmap/add_white"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_sub_in"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/btn_green_pressed"
+            android:gravity="center"
+            android:onClick="subjectClick"
+            android:text="@string/income"
+            android:textSize="20sp"
+            />
+
+        <Button
+            android:id="@+id/btn_sub_out"
+            android:layout_width="120dp"
+            android:layout_height="38dp"
+            android:background="@drawable/btn_orange_style"
+            android:gravity="center"
+            android:onClick="subjectClick"
+            android:text="@string/expense"
+            android:textSize="20sp"
+            />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/subject_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        />
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginRight="2dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+
+        >
+
+        <EditText
+            android:id="@+id/edit_add_sub"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:inputType="text"
+            />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_blue_style"
+            android:onClick="addSubClick"
+            android:text="@string/add_subject"
+            android:textColor="@android:color/black"
+            android:textSize="15sp"
+            />
+    </LinearLayout>
+</LinearLayout>

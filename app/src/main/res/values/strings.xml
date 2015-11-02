@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">理财通</string>
+    <string name="spinner_prompt">选择科目</string>
+    <string-array name="spinner_list_in_ac">
+        <item>工资</item>
+        <item>兼职</item>
+        <item>奖金</item>
+    </string-array>
+    <string-array name="spinner_list_out_ac">
+        <item>用餐</item>
+        <item>应酬</item>
+        <item>打的</item>
+    </string-array>
+    <string name="about_details_string">\t\t\t 这是一款家庭理财应用，可以帮助人们记录日常生活中的收入和支出，方便管理自己的财务。</string>
+    <string name="btn_save">保存</string>
+    <string name="click_select">选择</string>
+    <string name="new_money">金额：</string>
+    <string name="new_date">日期：</string>
+    <string name="new_subject">科目：</string>
+    <string name="new_out">新建支出</string>
+    <string name="new_note">备注：</string>
+    <string name="new_place">地点：</string>
+    <string name="img_back_desp">TitleBackButton</string>
+    <string name="new_money_hint">0.00</string>
+    <string name="new_date_hint">2000-01-01</string>
+    <string name="new_place_hint">输入地点</string>
+    <string name="new_note_hint">输入备注信息</string>
+    <string name="new_in">新建收入</string>
+    <string name="data_manage">数据管理</string>
+    <string name="reset_in_account">重置收入表</string>
+    <string name="reset_out_account">重置支出表</string>
+    <string name="reset_in_subject">重置收入科目表</string>
+    <string name="reset_out_subject">重置支出科目表</string>
+    <string name="data_statistics">数据统计</string>
+    <string name="income">收入</string>
+    <string name="expense">支出</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_hint">请输入您的意见建议</string>
+    <string name="btn_send">发送</string>
+    <string name="subject">类型</string>
+    <string name="income_info">收入信息</string>
+    <string name="money">金额</string>
+    <string name="place">地点</string>
+    <string name="date">日期</string>
+    <string name="note">备注</string>
+    <string name="expense_info">支出信息</string>
+    <string name="subject_manage">科目管理</string>
+    <string name="btn_add_subject">addSubject</string>
+    <string name="add_subject">添加</string>
+    <string name="user_info">个人信息</string>
+    <string name="new_username">昵称：</string>
+    <string name="new_user_age">年龄：</string>
+    <string name="new_user_gender">性别：</string>
+    <string name="new_user_area">地区：</string>
+    <string name="new_user_mail">邮箱：</string>
+    <string name="setting">设置</string>
+    <string name="setting_item_more">more</string>
+    <string name="check_update">检查更新</string>
+    <string name="about_us">关于</string>
+    <string name="app_rights">Powered By LiuQiang\nAll Rights Reserved</string>
+    <string name="gird_item_img">GridView item icon</string>
+</resources>
