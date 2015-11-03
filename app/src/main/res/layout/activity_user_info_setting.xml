@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@mipmap/content_back"
     android:orientation="vertical"
-    tools:context="com.android.silence.liccaitong.activity.UserInfoSetting">
+    tools:context="com.android.silence.licaitong.activity.UserInfoSetting">
 
     <LinearLayout
         android:layout_width="match_parent"
