@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.android.silence.licaitong.bean.TbOutSubject;
+import com.android.silence.licaitong.utils.DBOpenHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,10 +15,10 @@ import java.util.List;
  */
 public class OutSubjectDAO {
     private SQLiteDatabase db;
-    private DatabaseHelper helper;
+    private DBOpenHelper helper;
 
     public OutSubjectDAO(Context content) {
-        helper = DatabaseHelper.getInstance(content);
+        helper = DBOpenHelper.getInstance(content);
     }
 
     /**

@@ -5,16 +5,17 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.android.silence.licaitong.bean.TbUserInfo;
+import com.android.silence.licaitong.utils.DBOpenHelper;
 
 /**
  * Created by Silence on 2015/10/26 0026.
  */
 public class UserInfoDAO {
     private SQLiteDatabase db;
-    private DatabaseHelper helper;
+    private DBOpenHelper helper;
 
     public UserInfoDAO(Context context) {
-        helper = DatabaseHelper.getInstance(context);
+        helper = DBOpenHelper.getInstance(context);
     }
 
     /**

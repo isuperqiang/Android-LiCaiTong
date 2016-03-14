@@ -1,4 +1,4 @@
-package com.android.silence.licaitong.dao;
+package com.android.silence.licaitong.utils;
 
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
@@ -7,11 +7,11 @@ import android.database.sqlite.SQLiteOpenHelper;
 /**
  * Created by Silence on 2015/10/25 0025.
  */
-public class DatabaseHelper extends SQLiteOpenHelper {
+public class DBOpenHelper extends SQLiteOpenHelper {
 
     private static final String DB_NAME = "account.db";     //数据库名字
     private static final int DB_VERSION = 1;                //数据库版本号
-    private static DatabaseHelper sDatabaseHelper;          //当前实例
+    private static DBOpenHelper sDBOpenHelper;          //当前实例
 
     //收入表
     private static final String CREATE_IN_TABLE_SQL = "create table if not exists in_account" +
@@ -75,8 +75,19 @@ public class DatabaseHelper extends SQLiteOpenHelper {
      *
      * @param context context
      */
-    public DatabaseHelper(Context context) {
+    private DBOpenHelper(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
+    }
+
+    public static DBOpenHelper getInstance(Context context) {
+        if (sDBOpenHelper == null) {
+            synchronized (DBOpenHelper.class) {
+                if (sDBOpenHelper == null) {
+                    sDBOpenHelper = new DBOpenHelper(context);
+                }
+            }
+        }
+        return sDBOpenHelper;
     }
 
 
@@ -98,12 +109,5 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
 
-    }
-
-    public static DatabaseHelper getInstance(Context context) {
-        if (sDatabaseHelper == null) {
-            sDatabaseHelper = new DatabaseHelper(context);
-        }
-        return sDatabaseHelper;
     }
 }

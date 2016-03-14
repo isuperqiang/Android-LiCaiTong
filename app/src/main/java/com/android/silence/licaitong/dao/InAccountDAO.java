@@ -5,6 +5,7 @@ import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 
 import com.android.silence.licaitong.bean.TbInAccount;
+import com.android.silence.licaitong.utils.DBOpenHelper;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -13,11 +14,11 @@ import java.util.List;
  * Created by Silence on 2015/10/26 0026.
  */
 public class InAccountDAO {
-    private DatabaseHelper helper;
+    private DBOpenHelper helper;
     private SQLiteDatabase db;
 
     public InAccountDAO(Context context) {
-        helper = DatabaseHelper.getInstance(context);
+        helper = DBOpenHelper.getInstance(context);
     }
 
     /**
@@ -115,6 +116,7 @@ public class InAccountDAO {
         Cursor cursor = db.rawQuery(sql, null);
         if (cursor.moveToFirst()) {
             List<TbInAccount> list = new ArrayList<>();
+			TbInAccount tbInAccount;
             do {
                 int id = cursor.getInt(cursor.getColumnIndex("id"));
                 String date = cursor.getString(cursor.getColumnIndex("date"));
@@ -122,7 +124,7 @@ public class InAccountDAO {
                 float money = cursor.getFloat(cursor.getColumnIndex("money"));
                 String subject = cursor.getString(cursor.getColumnIndex("subject"));
                 String note = cursor.getString(cursor.getColumnIndex("note"));
-                TbInAccount tbInAccount = new TbInAccount(id, date, place, money, subject, note);
+                tbInAccount = new TbInAccount(id, date, place, money, subject, note);
                 list.add(tbInAccount);
             } while (cursor.moveToNext());
             cursor.close();
